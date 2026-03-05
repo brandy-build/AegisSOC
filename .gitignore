@@ -1,0 +1,54 @@
+# Environment files with secrets
+.env
+*.env
+!.env.example
+
+# Infrastructure secrets
+infrastructure/.env
+
+# MongoDB data files
+infrastructure/config/mongo/
+*.wt
+*.lock
+*.turtle
+journal/
+WiredTiger*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.next/
+out/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Docker
+docker-compose.override.yml

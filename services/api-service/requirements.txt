@@ -1,0 +1,6 @@
+fastapi
+pymongo
+uvicorn
+requests
+networkx
+pydantic

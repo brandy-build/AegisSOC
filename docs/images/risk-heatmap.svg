@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="criticalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="highGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="mediumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#eab308"/>
+      <stop offset="100%" style="stop-color:#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="lowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Container -->
+  <rect x="30" y="30" width="640" height="340" rx="16" fill="rgba(20,20,35,0.9)" stroke="rgba(255,255,255,0.08)"/>
+  
+  <!-- Header -->
+  <text x="60" y="65" fill="#fff" font-size="16" font-weight="bold" font-family="system-ui">📊 Risk Distribution</text>
+  <text x="210" y="65" fill="#888" font-size="12" font-family="system-ui">Top 10 by severity</text>
+  
+  <!-- Y-axis labels -->
+  <text x="55" y="100" text-anchor="end" fill="#666" font-size="9" font-family="system-ui">100</text>
+  <text x="55" y="145" text-anchor="end" fill="#666" font-size="9" font-family="system-ui">80</text>
+  <text x="55" y="190" text-anchor="end" fill="#666" font-size="9" font-family="system-ui">60</text>
+  <text x="55" y="235" text-anchor="end" fill="#666" font-size="9" font-family="system-ui">40</text>
+  <text x="55" y="280" text-anchor="end" fill="#666" font-size="9" font-family="system-ui">20</text>
+  <text x="55" y="320" text-anchor="end" fill="#666" font-size="9" font-family="system-ui">0</text>
+  
+  <!-- Grid lines -->
+  <line x1="70" y1="95" x2="620" y2="95" stroke="rgba(255,255,255,0.05)"/>
+  <line x1="70" y1="140" x2="620" y2="140" stroke="rgba(255,255,255,0.05)"/>
+  <line x1="70" y1="185" x2="620" y2="185" stroke="rgba(255,255,255,0.05)"/>
+  <line x1="70" y1="230" x2="620" y2="230" stroke="rgba(255,255,255,0.05)"/>
+  <line x1="70" y1="275" x2="620" y2="275" stroke="rgba(255,255,255,0.05)"/>
+  <line x1="70" y1="320" x2="620" y2="320" stroke="rgba(255,255,255,0.1)"/>
+  
+  <!-- Bars -->
+  <!-- Bar 1 - 95 (Critical) -->
+  <rect x="85" y="107" width="40" height="213" rx="6" fill="url(#criticalGrad)"/>
+  <text x="105" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-042</text>
+  
+  <!-- Bar 2 - 88 (Critical) -->
+  <rect x="140" y="122" width="40" height="198" rx="6" fill="url(#criticalGrad)"/>
+  <text x="160" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-039</text>
+  
+  <!-- Bar 3 - 82 (Critical) -->
+  <rect x="195" y="136" width="40" height="184" rx="6" fill="url(#criticalGrad)"/>
+  <text x="215" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-045</text>
+  
+  <!-- Bar 4 - 75 (High) -->
+  <rect x="250" y="152" width="40" height="168" rx="6" fill="url(#highGrad)"/>
+  <text x="270" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-041</text>
+  
+  <!-- Bar 5 - 68 (High) -->
+  <rect x="305" y="168" width="40" height="152" rx="6" fill="url(#highGrad)"/>
+  <text x="325" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-038</text>
+  
+  <!-- Bar 6 - 62 (High) -->
+  <rect x="360" y="180" width="40" height="140" rx="6" fill="url(#highGrad)"/>
+  <text x="380" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-044</text>
+  
+  <!-- Bar 7 - 55 (Medium) -->
+  <rect x="415" y="196" width="40" height="124" rx="6" fill="url(#mediumGrad)"/>
+  <text x="435" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-037</text>
+  
+  <!-- Bar 8 - 48 (Medium) -->
+  <rect x="470" y="212" width="40" height="108" rx="6" fill="url(#mediumGrad)"/>
+  <text x="490" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-040</text>
+  
+  <!-- Bar 9 - 35 (Low) -->
+  <rect x="525" y="241" width="40" height="79" rx="6" fill="url(#lowGrad)"/>
+  <text x="545" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-036</text>
+  
+  <!-- Bar 10 - 22 (Low) -->
+  <rect x="580" y="270" width="40" height="50" rx="6" fill="url(#lowGrad)"/>
+  <text x="600" y="340" text-anchor="middle" fill="#666" font-size="8" font-family="system-ui">INC-043</text>
+  
+  <!-- Legend -->
+  <circle cx="85" cy="365" r="6" fill="#ef4444"/>
+  <text x="100" y="368" fill="#888" font-size="10" font-family="system-ui">Critical (80+)</text>
+  
+  <circle cx="200" cy="365" r="6" fill="#f97316"/>
+  <text x="215" y="368" fill="#888" font-size="10" font-family="system-ui">High (60-79)</text>
+  
+  <circle cx="315" cy="365" r="6" fill="#eab308"/>
+  <text x="330" y="368" fill="#888" font-size="10" font-family="system-ui">Medium (40-59)</text>
+  
+  <circle cx="445" cy="365" r="6" fill="#22c55e"/>
+  <text x="460" y="368" fill="#888" font-size="10" font-family="system-ui">Low (&lt;40)</text>
+</svg>

@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold" font-family="system-ui">🎯 MITRE ATT&amp;CK Coverage</text>
+  
+  <!-- Matrix Headers -->
+  <g transform="translate(50, 60)">
+    <text x="0" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Initial Access</text>
+    <text x="70" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Execution</text>
+    <text x="140" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Persistence</text>
+    <text x="210" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Priv Esc</text>
+    <text x="280" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Defense Ev</text>
+    <text x="350" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Cred Access</text>
+    <text x="420" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Discovery</text>
+    <text x="490" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Lateral Mov</text>
+    <text x="560" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Collection</text>
+    <text x="630" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">C2</text>
+    <text x="700" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Exfiltration</text>
+    <text x="770" y="20" fill="#888" font-size="9" font-weight="bold" font-family="system-ui">Impact</text>
+  </g>
+  
+  <!-- Technique cells - Row 1 -->
+  <g transform="translate(50, 90)">
+    <!-- Initial Access -->
+    <rect x="0" y="0" width="60" height="35" rx="4" fill="rgba(239,68,68,0.8)" stroke="rgba(239,68,68,1)" stroke-width="1"/>
+    <text x="30" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1190</text>
+    <text x="30" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Exploit App</text>
+    
+    <!-- Execution -->
+    <rect x="70" y="0" width="60" height="35" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1059</text>
+    <text x="100" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Command</text>
+    
+    <!-- Persistence -->
+    <rect x="140" y="0" width="60" height="35" rx="4" fill="rgba(234,179,8,0.6)" stroke="rgba(234,179,8,1)" stroke-width="1"/>
+    <text x="170" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1098</text>
+    <text x="170" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Account</text>
+    
+    <!-- Priv Escalation -->
+    <rect x="210" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="240" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1548</text>
+    <text x="240" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Elevate</text>
+    
+    <!-- Defense Evasion -->
+    <rect x="280" y="0" width="60" height="35" rx="4" fill="rgba(234,179,8,0.6)" stroke="rgba(234,179,8,1)" stroke-width="1"/>
+    <text x="310" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1070</text>
+    <text x="310" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Clear Logs</text>
+    
+    <!-- Credential Access -->
+    <rect x="350" y="0" width="60" height="35" rx="4" fill="rgba(239,68,68,0.8)" stroke="rgba(239,68,68,1)" stroke-width="1"/>
+    <text x="380" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1110</text>
+    <text x="380" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Brute Force</text>
+    
+    <!-- Discovery -->
+    <rect x="420" y="0" width="60" height="35" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)" stroke-width="1"/>
+    <text x="450" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1087</text>
+    <text x="450" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Account</text>
+    
+    <!-- Lateral Movement -->
+    <rect x="490" y="0" width="60" height="35" rx="4" fill="rgba(234,179,8,0.6)" stroke="rgba(234,179,8,1)" stroke-width="1"/>
+    <text x="520" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1021</text>
+    <text x="520" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Remote</text>
+    
+    <!-- Collection -->
+    <rect x="560" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="590" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1005</text>
+    <text x="590" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Local Data</text>
+    
+    <!-- C2 -->
+    <rect x="630" y="0" width="60" height="35" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)" stroke-width="1"/>
+    <text x="660" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1071</text>
+    <text x="660" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">App Layer</text>
+    
+    <!-- Exfiltration -->
+    <rect x="700" y="0" width="60" height="35" rx="4" fill="rgba(234,179,8,0.6)" stroke="rgba(234,179,8,1)" stroke-width="1"/>
+    <text x="730" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1041</text>
+    <text x="730" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Over C2</text>
+    
+    <!-- Impact -->
+    <rect x="770" y="0" width="60" height="35" rx="4" fill="rgba(239,68,68,0.8)" stroke="rgba(239,68,68,1)" stroke-width="1"/>
+    <text x="800" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1486</text>
+    <text x="800" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Ransomware</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g transform="translate(50, 135)">
+    <rect x="0" y="0" width="60" height="35" rx="4" fill="rgba(234,179,8,0.6)" stroke="rgba(234,179,8,1)" stroke-width="1"/>
+    <text x="30" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1133</text>
+    <text x="30" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">RDP/VPN</text>
+    
+    <rect x="70" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1203</text>
+    <text x="100" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Exploit</text>
+    
+    <rect x="140" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="170" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1136</text>
+    <text x="170" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">New User</text>
+    
+    <rect x="210" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="240" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1134</text>
+    <text x="240" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Token</text>
+    
+    <rect x="280" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="310" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1562</text>
+    <text x="310" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Impair</text>
+    
+    <rect x="350" y="0" width="60" height="35" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)" stroke-width="1"/>
+    <text x="380" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1003</text>
+    <text x="380" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Dump Creds</text>
+    
+    <rect x="420" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="450" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1082</text>
+    <text x="450" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Sys Info</text>
+    
+    <rect x="490" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="520" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1091</text>
+    <text x="520" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">USB</text>
+    
+    <rect x="560" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="590" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1114</text>
+    <text x="590" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Email</text>
+    
+    <rect x="630" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="660" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1105</text>
+    <text x="660" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Download</text>
+    
+    <rect x="700" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="730" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1048</text>
+    <text x="730" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Alt Proto</text>
+    
+    <rect x="770" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="800" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1485</text>
+    <text x="800" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Destroy</text>
+  </g>
+  
+  <!-- Row 3 -->
+  <g transform="translate(50, 180)">
+    <rect x="0" y="0" width="60" height="35" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)" stroke-width="1"/>
+    <text x="30" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1566</text>
+    <text x="30" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">Phishing</text>
+    
+    <rect x="70" y="0" width="60" height="35" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" fill="#fff" font-size="7" font-family="system-ui">T1204</text>
+    <text x="100" y="27" text-anchor="middle" fill="#fff" font-size="6" font-family="system-ui">User Exec</text>
+    
+    <rect x="140" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="170" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1053</text>
+    <text x="170" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Sched Task</text>
+    
+    <rect x="210" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="240" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1068</text>
+    <text x="240" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Exploit</text>
+    
+    <rect x="280" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="310" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1036</text>
+    <text x="310" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Masquerade</text>
+    
+    <rect x="350" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="380" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1555</text>
+    <text x="380" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Password</text>
+    
+    <rect x="420" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="450" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1083</text>
+    <text x="450" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">File Disc</text>
+    
+    <rect x="490" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="520" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1080</text>
+    <text x="520" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Taint</text>
+    
+    <rect x="560" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="590" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1119</text>
+    <text x="590" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Automated</text>
+    
+    <rect x="630" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="660" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1573</text>
+    <text x="660" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Encrypted</text>
+    
+    <rect x="700" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="730" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1567</text>
+    <text x="730" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Web Svc</text>
+    
+    <rect x="770" y="0" width="60" height="35" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="800" y="15" text-anchor="middle" fill="#666" font-size="7" font-family="system-ui">T1489</text>
+    <text x="800" y="27" text-anchor="middle" fill="#666" font-size="6" font-family="system-ui">Svc Stop</text>
+  </g>
+  
+  <!-- Statistics Panel -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="380" height="180" rx="12" fill="rgba(20,20,35,0.8)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="30" fill="#fff" font-size="14" font-weight="bold" font-family="system-ui">Coverage Statistics</text>
+    
+    <text x="20" y="60" fill="#888" font-size="11" font-family="system-ui">Tactics Covered</text>
+    <text x="340" y="60" fill="#22c55e" font-size="14" font-weight="bold" font-family="system-ui">10/12</text>
+    
+    <text x="20" y="85" fill="#888" font-size="11" font-family="system-ui">Techniques Detected</text>
+    <text x="340" y="85" fill="#00d4ff" font-size="14" font-weight="bold" font-family="system-ui">18/36</text>
+    
+    <text x="20" y="110" fill="#888" font-size="11" font-family="system-ui">Critical Techniques</text>
+    <text x="340" y="110" fill="#ef4444" font-size="14" font-weight="bold" font-family="system-ui">7</text>
+    
+    <text x="20" y="135" fill="#888" font-size="11" font-family="system-ui">High Risk Techniques</text>
+    <text x="340" y="135" fill="#f97316" font-size="14" font-weight="bold" font-family="system-ui">8</text>
+    
+    <text x="20" y="160" fill="#888" font-size="11" font-family="system-ui">Medium Risk Techniques</text>
+    <text x="340" y="160" fill="#eab308" font-size="14" font-weight="bold" font-family="system-ui">3</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(470, 280)">
+    <rect x="0" y="0" width="380" height="180" rx="12" fill="rgba(20,20,35,0.8)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="30" fill="#fff" font-size="14" font-weight="bold" font-family="system-ui">Heat Map Legend</text>
+    
+    <rect x="20" y="50" width="80" height="25" rx="4" fill="rgba(239,68,68,0.8)" stroke="rgba(239,68,68,1)"/>
+    <text x="120" y="67" fill="#fff" font-size="11" font-family="system-ui">Critical - 5+ detections</text>
+    
+    <rect x="20" y="85" width="80" height="25" rx="4" fill="rgba(249,115,22,0.8)" stroke="rgba(249,115,22,1)"/>
+    <text x="120" y="102" fill="#fff" font-size="11" font-family="system-ui">High - 3-4 detections</text>
+    
+    <rect x="20" y="120" width="80" height="25" rx="4" fill="rgba(234,179,8,0.6)" stroke="rgba(234,179,8,1)"/>
+    <text x="120" y="137" fill="#fff" font-size="11" font-family="system-ui">Medium - 1-2 detections</text>
+    
+    <rect x="20" y="155" width="80" height="25" rx="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="120" y="172" fill="#888" font-size="11" font-family="system-ui">None - No detections</text>
+  </g>
+</svg>

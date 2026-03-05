@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Container -->
+  <rect x="30" y="30" width="640" height="440" rx="16" fill="rgba(20,20,35,0.9)" stroke="rgba(255,255,255,0.1)"/>
+  
+  <!-- Header -->
+  <rect x="30" y="30" width="640" height="60" rx="16" fill="rgba(20,20,35,0.95)"/>
+  <rect x="30" y="75" width="640" height="15" fill="rgba(20,20,35,0.95)"/>
+  <text x="60" y="68" fill="#fff" font-size="16" font-weight="bold" font-family="system-ui">🤖 AI SOC Assistant</text>
+  <circle cx="630" cy="60" r="8" fill="#22c55e"/>
+  <text x="605" y="64" text-anchor="end" fill="#888" font-size="11" font-family="system-ui">Online</text>
+  <text x="540" y="64" fill="#666" font-size="10" font-family="system-ui">Powered by Mistral AI</text>
+  
+  <!-- Quick actions -->
+  <rect x="50" y="100" width="80" height="24" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="90" y="116" text-anchor="middle" fill="#888" font-size="9" font-family="system-ui">Quick:</text>
+  <rect x="140" y="100" width="110" height="24" rx="12" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)"/>
+  <text x="195" y="116" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="system-ui">Analyze incidents</text>
+  <rect x="260" y="100" width="90" height="24" rx="12" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)"/>
+  <text x="305" y="116" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="system-ui">Block IPs?</text>
+  <rect x="360" y="100" width="100" height="24" rx="12" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)"/>
+  <text x="410" y="116" text-anchor="middle" fill="#a78bfa" font-size="9" font-family="system-ui">Threat intel</text>
+  
+  <!-- Chat messages -->
+  <!-- AI Welcome -->
+  <rect x="50" y="145" width="400" height="50" rx="12" fill="rgba(124,58,237,0.15)"/>
+  <text x="70" y="165" fill="#a78bfa" font-size="11" font-family="system-ui">🤖 I'm your SOC AI Assistant powered by Mistral. I can analyze</text>
+  <text x="70" y="182" fill="#a78bfa" font-size="11" font-family="system-ui">incidents, explain threats, and provide investigation guidance.</text>
+  
+  <!-- User message -->
+  <rect x="250" y="210" width="380" height="40" rx="12" fill="rgba(255,255,255,0.08)"/>
+  <text x="270" y="232" fill="#fff" font-size="11" font-family="system-ui">👤 What are the most critical incidents from today?</text>
+  
+  <!-- AI Response -->
+  <rect x="50" y="265" width="480" height="120" rx="12" fill="rgba(124,58,237,0.15)"/>
+  <text x="70" y="288" fill="#a78bfa" font-size="11" font-family="system-ui">🤖 Based on my analysis of 247 incidents from the last 24 hours,</text>
+  <text x="70" y="305" fill="#a78bfa" font-size="11" font-family="system-ui">I found 12 critical incidents requiring immediate attention:</text>
+  <text x="70" y="328" fill="#fff" font-size="10" font-family="system-ui">• 5 Brute force attacks targeting web-server-01 (192.168.1.50)</text>
+  <text x="70" y="345" fill="#fff" font-size="10" font-family="system-ui">• 3 Suspected ransomware activity on db-primary</text>
+  <text x="70" y="362" fill="#fff" font-size="10" font-family="system-ui">• 4 C2 communication attempts to malicious domains</text>
+  <text x="70" y="379" fill="#ef4444" font-size="10" font-weight="bold" font-family="system-ui">Recommendation: Block IPs 45.33.x.x and isolate db-primary</text>
+  
+  <!-- Input area -->
+  <rect x="50" y="405" width="540" height="45" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)"/>
+  <text x="75" y="432" fill="#666" font-size="12" font-family="system-ui">Ask about incidents, IOCs, or threats...</text>
+  <rect x="600" y="410" width="50" height="35" rx="10" fill="url(#aiGrad)"/>
+  <text x="625" y="433" text-anchor="middle" fill="#fff" font-size="18">→</text>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Container -->
+  <rect x="30" y="30" width="740" height="440" rx="16" fill="rgba(20,20,35,0.9)" stroke="rgba(255,255,255,0.08)"/>
+  
+  <!-- Header -->
+  <text x="60" y="65" fill="#fff" font-size="16" font-weight="bold" font-family="system-ui">🔍 IOC Explorer</text>
+  <text x="175" y="65" fill="#888" font-size="12" font-family="system-ui">1,247 indicators</text>
+  
+  <!-- Type filter chips -->
+  <rect x="60" y="85" width="70" height="28" rx="14" fill="rgba(0,212,255,0.3)" stroke="rgba(0,212,255,0.6)"/>
+  <text x="95" y="103" text-anchor="middle" fill="#00d4ff" font-size="10" font-weight="bold" font-family="system-ui">IP: 523</text>
+  
+  <rect x="140" y="85" width="90" height="28" rx="14" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)"/>
+  <text x="185" y="103" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="system-ui">DOMAIN: 312</text>
+  
+  <rect x="240" y="85" width="80" height="28" rx="14" fill="rgba(249,115,22,0.2)" stroke="rgba(249,115,22,0.4)"/>
+  <text x="280" y="103" text-anchor="middle" fill="#f97316" font-size="10" font-family="system-ui">HASH: 287</text>
+  
+  <rect x="330" y="85" width="70" height="28" rx="14" fill="rgba(34,197,94,0.2)" stroke="rgba(34,197,94,0.4)"/>
+  <text x="365" y="103" text-anchor="middle" fill="#22c55e" font-size="10" font-family="system-ui">URL: 125</text>
+  
+  <!-- Search and filters -->
+  <rect x="60" y="125" width="300" height="35" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="80" y="147" fill="#666" font-size="11" font-family="system-ui">🔍 Search IOCs...</text>
+  
+  <rect x="380" y="125" width="120" height="35" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="400" y="147" fill="#888" font-size="11" font-family="system-ui">All Types ▼</text>
+  
+  <rect x="510" y="125" width="120" height="35" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <text x="530" y="147" fill="#888" font-size="11" font-family="system-ui">Sort by Count ▼</text>
+  
+  <!-- IOC List -->
+  <!-- IOC 1 -->
+  <rect x="60" y="175" width="680" height="55" rx="8" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.3)"/>
+  <circle cx="85" cy="202" r="12" fill="rgba(0,212,255,0.2)"/>
+  <text x="85" y="207" text-anchor="middle" fill="#00d4ff" font-size="10" font-family="system-ui">🌐</text>
+  <text x="110" y="195" fill="#00d4ff" font-size="10" font-weight="bold" font-family="system-ui">IP ADDRESS</text>
+  <text x="110" y="215" fill="#fff" font-size="13" font-family="monospace">45.33.32.156</text>
+  <text x="420" y="195" fill="#888" font-size="10" font-family="system-ui">Seen in 47 incidents</text>
+  <rect x="420" y="205" width="120" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="420" y="205" width="95" height="6" rx="3" fill="#ef4444"/>
+  <rect x="600" y="190" width="60" height="22" rx="4" fill="rgba(239,68,68,0.2)"/>
+  <text x="630" y="205" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="bold" font-family="system-ui">Risk: 92</text>
+  <text x="680" y="205" fill="#888" font-size="10" font-family="system-ui">🔗 VT</text>
+  
+  <!-- IOC 2 -->
+  <rect x="60" y="240" width="680" height="55" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.3)"/>
+  <circle cx="85" cy="267" r="12" fill="rgba(124,58,237,0.2)"/>
+  <text x="85" y="272" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="system-ui">🔗</text>
+  <text x="110" y="260" fill="#a78bfa" font-size="10" font-weight="bold" font-family="system-ui">DOMAIN</text>
+  <text x="110" y="280" fill="#fff" font-size="13" font-family="monospace">malware-c2.evil.net</text>
+  <text x="420" y="260" fill="#888" font-size="10" font-family="system-ui">Seen in 23 incidents</text>
+  <rect x="420" y="270" width="120" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="420" y="270" width="70" height="6" rx="3" fill="#f97316"/>
+  <rect x="600" y="255" width="60" height="22" rx="4" fill="rgba(249,115,22,0.2)"/>
+  <text x="630" y="270" text-anchor="middle" fill="#f97316" font-size="10" font-weight="bold" font-family="system-ui">Risk: 78</text>
+  <text x="680" y="270" fill="#888" font-size="10" font-family="system-ui">🔗 OTX</text>
+  
+  <!-- IOC 3 -->
+  <rect x="60" y="305" width="680" height="55" rx="8" fill="rgba(249,115,22,0.1)" stroke="rgba(249,115,22,0.3)"/>
+  <circle cx="85" cy="332" r="12" fill="rgba(249,115,22,0.2)"/>
+  <text x="85" y="337" text-anchor="middle" fill="#f97316" font-size="10" font-family="system-ui">#</text>
+  <text x="110" y="325" fill="#f97316" font-size="10" font-weight="bold" font-family="system-ui">FILE HASH (SHA256)</text>
+  <text x="110" y="345" fill="#fff" font-size="11" font-family="monospace">a1b2c3d4e5f6...7890abcd</text>
+  <text x="420" y="325" fill="#888" font-size="10" font-family="system-ui">Seen in 15 incidents</text>
+  <rect x="420" y="335" width="120" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="420" y="335" width="50" height="6" rx="3" fill="#eab308"/>
+  <rect x="600" y="320" width="60" height="22" rx="4" fill="rgba(234,179,8,0.2)"/>
+  <text x="630" y="335" text-anchor="middle" fill="#eab308" font-size="10" font-weight="bold" font-family="system-ui">Risk: 56</text>
+  <text x="680" y="335" fill="#888" font-size="10" font-family="system-ui">🔗 VT</text>
+  
+  <!-- IOC 4 -->
+  <rect x="60" y="370" width="680" height="55" rx="8" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.3)"/>
+  <circle cx="85" cy="397" r="12" fill="rgba(0,212,255,0.2)"/>
+  <text x="85" y="402" text-anchor="middle" fill="#00d4ff" font-size="10" font-family="system-ui">🌐</text>
+  <text x="110" y="390" fill="#00d4ff" font-size="10" font-weight="bold" font-family="system-ui">IP ADDRESS</text>
+  <text x="110" y="410" fill="#fff" font-size="13" font-family="monospace">192.168.1.100</text>
+  <text x="420" y="390" fill="#888" font-size="10" font-family="system-ui">Seen in 8 incidents</text>
+  <rect x="420" y="400" width="120" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="420" y="400" width="30" height="6" rx="3" fill="#22c55e"/>
+  <rect x="600" y="385" width="60" height="22" rx="4" fill="rgba(34,197,94,0.2)"/>
+  <text x="630" y="400" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="bold" font-family="system-ui">Risk: 24</text>
+  <text x="680" y="400" fill="#888" font-size="10" font-family="system-ui">🔗 Abuse</text>
+  
+  <!-- Pagination -->
+  <text x="400" y="450" text-anchor="middle" fill="#666" font-size="11" font-family="system-ui">Showing 1-25 of 1,247 indicators • Page 1 of 50</text>
+</svg>

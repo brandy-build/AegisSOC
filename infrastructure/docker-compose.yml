@@ -1,0 +1,116 @@
+version: '3.8'
+services:
+  # Wazuh runs separately from wazuh-docker/single-node
+  redpanda:
+    image: redpandadata/redpanda:latest
+    ports:
+      - "9092:9092"
+      - "8081:8081"
+      - "9644:9644"
+    command:
+      - redpanda start
+      - --smp 1
+      - --memory 512M
+      - --overprovisioned
+      - --node-id 0
+      - --kafka-addr PLAINTEXT://0.0.0.0:9092
+      - --advertise-kafka-addr PLAINTEXT://redpanda:9092
+      - --pandaproxy-addr 0.0.0.0:8082
+      - --advertise-pandaproxy-addr redpanda:8082
+      - --rpc-addr 0.0.0.0:33145
+      - --advertise-rpc-addr redpanda:33145
+  redpanda-console:
+    image: redpandadata/console:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - KAFKA_BROKERS=redpanda:9092
+    depends_on:
+      - redpanda
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./config/mongo:/data/db
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+  alert-exporter:
+    build: ../services/alert-exporter
+    environment:
+      - KAFKA_TOPIC=wazuh-alerts
+      - KAFKA_SERVERS=redpanda:9092
+      - WAZUH_ALERTS_PATH=/var/ossec/logs/alerts/alerts.json
+    volumes:
+      - wazuh-logs:/var/ossec/logs:ro
+    depends_on:
+      - redpanda
+  detection-engine:
+    build: ../services/detection-engine
+    environment:
+      - KAFKA_TOPIC=wazuh-alerts
+      - KAFKA_SERVERS=redpanda:9092
+      - MONGO_URI=mongodb://mongodb:27017
+    depends_on:
+      - redpanda
+      - mongodb
+  intel-engine:
+    build: ../services/intel-engine
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - VIRUSTOTAL_API_KEY=${VIRUSTOTAL_API_KEY}
+      - ABUSEIPDB_API_KEY=${ABUSEIPDB_API_KEY}
+      - ALIENVAULT_OTX_API_KEY=${ALIENVAULT_OTX_API_KEY}
+    depends_on:
+      - mongodb
+  investigation-engine:
+    build: ../services/investigation-engine
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=mistral
+    depends_on:
+      - mongodb
+      - ollama
+  graph-engine:
+    build: ../services/graph-engine
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - GRAPH_PATH=/data/graph.gpickle
+    volumes:
+      - graph-data:/data
+    depends_on:
+      - mongodb
+  api-service:
+    build: ../services/api-service
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - GRAPH_PATH=/data/graph.gpickle
+      - OLLAMA_BASE_URL=http://ollama:11434
+    volumes:
+      - graph-data:/data
+    depends_on:
+      - mongodb
+    ports:
+      - "8001:8000"
+  dashboard:
+    build: ../dashboard
+    environment:
+      - API_URL=http://api-service:8000
+    depends_on:
+      - api-service
+    ports:
+      - "3000:3000"
+networks:
+  default:
+    driver: bridge
+volumes:
+  graph-data:
+  ollama-data:
+  wazuh-logs:
+    external: true
+    name: single-node_wazuh_logs

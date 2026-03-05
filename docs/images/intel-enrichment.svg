@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="vtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#0066ff"/>
+    </linearGradient>
+    <linearGradient id="abuseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="otxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" fill="#fff" font-size="18" font-weight="bold" font-family="system-ui">🔍 Threat Intelligence Enrichment</text>
+  
+  <!-- Central IP -->
+  <rect x="270" y="60" width="160" height="60" rx="12" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)"/>
+  <text x="350" y="85" text-anchor="middle" fill="#888" font-size="10" font-family="system-ui">ANALYZING</text>
+  <text x="350" y="108" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold" font-family="monospace">45.33.32.156</text>
+  
+  <!-- VirusTotal Card -->
+  <rect x="40" y="150" width="190" height="220" rx="12" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.3)"/>
+  <rect x="40" y="150" width="190" height="45" rx="12" fill="url(#vtGrad)" opacity="0.3"/>
+  <rect x="40" y="180" width="190" height="15" fill="rgba(0,212,255,0.1)"/>
+  <text x="135" y="180" text-anchor="middle" fill="#00d4ff" font-size="14" font-weight="bold" font-family="system-ui">VirusTotal</text>
+  
+  <text x="60" y="215" fill="#888" font-size="10" font-family="system-ui">Detection Ratio</text>
+  <text x="200" y="215" text-anchor="end" fill="#ef4444" font-size="14" font-weight="bold" font-family="system-ui">48/87</text>
+  
+  <text x="60" y="245" fill="#888" font-size="10" font-family="system-ui">Reputation</text>
+  <text x="200" y="245" text-anchor="end" fill="#ef4444" font-size="14" font-weight="bold" font-family="system-ui">Malicious</text>
+  
+  <text x="60" y="275" fill="#888" font-size="10" font-family="system-ui">Community Score</text>
+  <text x="200" y="275" text-anchor="end" fill="#f97316" font-size="14" font-weight="bold" font-family="system-ui">-47</text>
+  
+  <text x="60" y="305" fill="#888" font-size="10" font-family="system-ui">Categories</text>
+  <rect x="60" y="315" width="60" height="18" rx="4" fill="rgba(239,68,68,0.2)"/>
+  <text x="90" y="328" text-anchor="middle" fill="#ef4444" font-size="8" font-family="system-ui">Malware</text>
+  <rect x="130" y="315" width="50" height="18" rx="4" fill="rgba(249,115,22,0.2)"/>
+  <text x="155" y="328" text-anchor="middle" fill="#f97316" font-size="8" font-family="system-ui">C2</text>
+  
+  <!-- Arrow to VT -->
+  <line x1="270" y1="100" x2="210" y2="150" stroke="rgba(0,212,255,0.5)" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- AbuseIPDB Card -->
+  <rect x="255" y="150" width="190" height="220" rx="12" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.3)"/>
+  <rect x="255" y="150" width="190" height="45" rx="12" fill="url(#abuseGrad)" opacity="0.3"/>
+  <rect x="255" y="180" width="190" height="15" fill="rgba(239,68,68,0.1)"/>
+  <text x="350" y="180" text-anchor="middle" fill="#ef4444" font-size="14" font-weight="bold" font-family="system-ui">AbuseIPDB</text>
+  
+  <text x="275" y="215" fill="#888" font-size="10" font-family="system-ui">Confidence Score</text>
+  <text x="415" y="215" text-anchor="end" fill="#ef4444" font-size="14" font-weight="bold" font-family="system-ui">95%</text>
+  
+  <text x="275" y="245" fill="#888" font-size="10" font-family="system-ui">Total Reports</text>
+  <text x="415" y="245" text-anchor="end" fill="#f97316" font-size="14" font-weight="bold" font-family="system-ui">1,247</text>
+  
+  <text x="275" y="275" fill="#888" font-size="10" font-family="system-ui">Last Reported</text>
+  <text x="415" y="275" text-anchor="end" fill="#fff" font-size="12" font-family="system-ui">2 hours ago</text>
+  
+  <text x="275" y="305" fill="#888" font-size="10" font-family="system-ui">Abuse Types</text>
+  <rect x="275" y="315" width="50" height="18" rx="4" fill="rgba(239,68,68,0.2)"/>
+  <text x="300" y="328" text-anchor="middle" fill="#ef4444" font-size="8" font-family="system-ui">SSH</text>
+  <rect x="333" y="315" width="50" height="18" rx="4" fill="rgba(249,115,22,0.2)"/>
+  <text x="358" y="328" text-anchor="middle" fill="#f97316" font-size="8" font-family="system-ui">Web</text>
+  <rect x="391" y="315" width="45" height="18" rx="4" fill="rgba(234,179,8,0.2)"/>
+  <text x="413" y="328" text-anchor="middle" fill="#eab308" font-size="8" font-family="system-ui">Port</text>
+  
+  <!-- Arrow to AbuseIPDB -->
+  <line x1="350" y1="120" x2="350" y2="150" stroke="rgba(239,68,68,0.5)" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- AlienVault OTX Card -->
+  <rect x="470" y="150" width="190" height="220" rx="12" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)"/>
+  <rect x="470" y="150" width="190" height="45" rx="12" fill="url(#otxGrad)" opacity="0.3"/>
+  <rect x="470" y="180" width="190" height="15" fill="rgba(34,197,94,0.1)"/>
+  <text x="565" y="180" text-anchor="middle" fill="#22c55e" font-size="14" font-weight="bold" font-family="system-ui">AlienVault OTX</text>
+  
+  <text x="490" y="215" fill="#888" font-size="10" font-family="system-ui">Pulse Count</text>
+  <text x="630" y="215" text-anchor="end" fill="#f97316" font-size="14" font-weight="bold" font-family="system-ui">23</text>
+  
+  <text x="490" y="245" fill="#888" font-size="10" font-family="system-ui">Indicator Types</text>
+  <text x="630" y="245" text-anchor="end" fill="#fff" font-size="12" font-family="system-ui">IPv4, URL</text>
+  
+  <text x="490" y="275" fill="#888" font-size="10" font-family="system-ui">Related Tags</text>
+  <rect x="490" y="285" width="55" height="18" rx="4" fill="rgba(239,68,68,0.2)"/>
+  <text x="517" y="298" text-anchor="middle" fill="#ef4444" font-size="8" font-family="system-ui">Botnet</text>
+  <rect x="553" y="285" width="50" height="18" rx="4" fill="rgba(249,115,22,0.2)"/>
+  <text x="578" y="298" text-anchor="middle" fill="#f97316" font-size="8" font-family="system-ui">APT</text>
+  <rect x="611" y="285" width="40" height="18" rx="4" fill="rgba(234,179,8,0.2)"/>
+  <text x="631" y="298" text-anchor="middle" fill="#eab308" font-size="8" font-family="system-ui">Scan</text>
+  
+  <text x="490" y="330" fill="#888" font-size="10" font-family="system-ui">First Seen</text>
+  <text x="630" y="330" text-anchor="end" fill="#888" font-size="11" font-family="system-ui">2024-01-15</text>
+  
+  <text x="490" y="355" fill="#888" font-size="10" font-family="system-ui">Last Modified</text>
+  <text x="630" y="355" text-anchor="end" fill="#888" font-size="11" font-family="system-ui">2026-03-04</text>
+  
+  <!-- Arrow to OTX -->
+  <line x1="430" y1="100" x2="490" y2="150" stroke="rgba(34,197,94,0.5)" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>
